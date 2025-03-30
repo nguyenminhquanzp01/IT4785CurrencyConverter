@@ -16,12 +16,13 @@ class MainActivity : ComponentActivity() {
         USD(1.0),
         VND(25550.0),
         Euro(0.92),
-        Peso(57.36)
+        Peso(57.36),
+        Pound(0.7724)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_layout)
-        val currencyType: Array<String> = arrayOf("VND", "USD", "Euro", "Peso")
+        val currencyType: Array<String> = arrayOf("VND", "USD", "Euro", "Peso", "Pound")
 
         val fromSpinner: Spinner = findViewById(R.id.fromSpinner)
         val toSpinner: Spinner = findViewById(R.id.toSpinner)
