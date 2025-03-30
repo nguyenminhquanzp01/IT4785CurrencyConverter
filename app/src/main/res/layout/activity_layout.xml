@@ -1,0 +1,117 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="23dp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:columnCount="1"
+        android:rowCount="4"
+        >
+        <EditText
+            android:id="@+id/fromText"
+            android:hint="0"
+            android:maxLength="13"
+            android:autofillHints="phone"
+            android:gravity="bottom"
+            android:inputType="numberDecimal"
+            style="@style/ConvertingAreaText"/>
+        <Spinner
+            android:id="@+id/fromSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/toText"
+            android:text=""
+            android:gravity="bottom"
+            style="@style/ConvertingAreaText"/>
+        <Spinner
+            android:id="@+id/toSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/rateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginVertical="10dp"
+        style="@style/RateText"
+        android:text="Rate:\n"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="3"
+
+        android:visibility="invisible">
+
+        <Button
+            style="@style/NumberButton"
+            android:background="@android:color/transparent"/>
+        <Button
+            android:id="@+id/clearAllBtn"
+            style="@style/NumberButton"
+            android:text="CE"/>
+        <Button
+            android:id="@+id/backspaceBtn"
+            style="@style/NumberButton"
+            android:text="⌫"/>
+        <Button
+            android:id="@+id/num1Btn"
+            style="@style/NumberButton"
+            android:text="1"/>
+        <Button
+            android:id="@+id/num2Btn"
+            style="@style/NumberButton"
+            android:text="2"/>
+        <Button
+            android:id="@+id/num3Btn"
+            style="@style/NumberButton"
+            android:text="3"/>
+        <Button
+            android:id="@+id/num4Btn"
+            style="@style/NumberButton"
+            android:text="4"/>
+        <Button
+            android:id="@+id/num5Btn"
+            style="@style/NumberButton"
+            android:text="5"/>
+        <Button
+            android:id="@+id/num6Btn"
+            style="@style/NumberButton"
+            android:text="6"/>
+        <Button
+            android:id="@+id/num7Btn"
+            style="@style/NumberButton"
+            android:text="7"/>
+        <Button
+            android:id="@+id/num8Btn"
+            style="@style/NumberButton"
+            android:text="8"/>
+        <Button
+            android:id="@+id/num9Btn"
+            style="@style/NumberButton"
+            android:text="9"/>
+        <Button
+            style="@style/NumberButton"
+            android:background="@android:color/transparent" />
+        <Button
+            android:id="@+id/num0Btn"
+            style="@style/NumberButton"
+            android:text="0"/>
+        <Button
+            android:id="@+id/decimalPointBtn"
+            style="@style/NumberButton"
+            android:text="."/>
+
+    </GridLayout>
+
+
+</LinearLayout>
